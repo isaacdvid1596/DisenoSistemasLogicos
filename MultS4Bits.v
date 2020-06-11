@@ -40,8 +40,8 @@ module MultS4Bits(
 
     wire [7:0] resultxy2;
 
-    MultU4Bits mult4bitsoffsetx = (resultxy, offsetx2);
-    MultU4Bits mult4bitsoffsety = (resultxy, offsety2);
+    MultU4Bits mult4bitsoffsetx(resultxy, offsetx2, resultxy2);
+    MultU4Bits mult4bitsoffsety(resultxy, offsety2, resultxy2);
 
 
     //third term
